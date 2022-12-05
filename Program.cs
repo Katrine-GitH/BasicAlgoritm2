@@ -3,9 +3,18 @@
 //12821 -> да
 //23432 -> да
 //СТРОКИ ИСПОЛЬЗОВАТЬ НЕЛЬЗЯ
-int a = 12345;
-if (a/10)
-{
-a=a%10;
-}
-Console.WriteLine($"a:{a}");
+int number = 14212;
+int digits2 = (number / 1000) % 10;
+int digits4 = (number / 10) % 10;
+int digits1 = (number / 10000) % 10;
+int digits5 = number % 10;
+//Console.WriteLine($"digits2:{digits2}, digits4:{digits4}, digits1:{digits1}, digits5:{digits5}");
+if (digits1 == digits5)
+    if (digits2 == digits4)
+    {
+        Console.WriteLine("Yes");
+    }
+    else
+    {
+        Console.WriteLine("No");
+    }
