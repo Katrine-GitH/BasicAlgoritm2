@@ -3,7 +3,8 @@
 //12821 -> да
 //23432 -> да
 //СТРОКИ ИСПОЛЬЗОВАТЬ НЕЛЬЗЯ
-int number = 14212;
+Console.WriteLine("Write a 5-digit number");
+int number = int.Parse(Console.ReadLine()); 
 int digits2 = (number / 1000) % 10;
 int digits4 = (number / 10) % 10;
 int digits1 = (number / 10000) % 10;
@@ -18,3 +19,7 @@ if (digits1 == digits5)
     {
         Console.WriteLine("No");
     }
+else
+{
+    Console.WriteLine("No");
+}
